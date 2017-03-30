@@ -14,10 +14,7 @@ public class Job {
     private PositionType positionType;
     private CoreCompetency coreCompetency;
 
-    public Job() {
-        id = nextId;
-        nextId++;
-    }
+
 
     public Job(String aName, Employer aEmployer, Location aLocation,
                PositionType aPositionType, CoreCompetency aSkill) {
@@ -30,6 +27,11 @@ public class Job {
         positionType = aPositionType;
         coreCompetency = aSkill;
 
+    }
+
+    public Job() {
+        id = nextId;
+        nextId++;
     }
 
     public String getName() {
