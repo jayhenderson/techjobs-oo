@@ -28,7 +28,7 @@ public class JobController {
 
         // Done #1 - get the Job with the given ID and pass it into the view
         Job searchedJob = jobData.findById(id);
-        model.addAttribute("searchedJob", searchedJob);
+        model.addAttribute("job", searchedJob);
         return "job-detail";
     }
 
